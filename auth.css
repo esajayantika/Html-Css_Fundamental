@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
 body {
   min-height: 100vh;
   margin: 0;
@@ -6,15 +12,211 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 
   text-align: center;
+  background-color: #fffdf3;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1440px;
+  padding: 12px 120px 12px 80px;
+  border-bottom: 1px solid #f1f1f1;
+}
+img {
+  margin-left: 0;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  padding: 64px 120px 64px 120px;
+  box-sizing: border-box;
 }
 #form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-self: center;
+  gap: 36px;
+  max-width: 590px;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  padding: 36px;
+  border-radius: 4px;
+}
+.form-header h3,
+.form-header p {
+  margin: 0;
+}
+.form-header {
+  display: flex;
+  flex-direction: column;
   gap: 4px;
-  max-width: 400px;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333ad;
+}
+/* pengaturan setiap group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+/* pengaturan grup password */
+.password-group {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
 }
+.password-group input {
+  width: 100%;
+  padding-right: 40px;
+}
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+label {
+  align-self: flex-start;
+  color: #333333ad;
+}
+label::after {
+  content: " *";
+  color: #ff5c2b;
+  font-weight: bold;
+}
+/* field input */
+input {
+  display: block;
+  width: 518px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 4px 10px 4px 10px;
+  box-sizing: border-box;
+  border: 1px solid #f1f1f1;
+  outline: none;
+}
+input:focus {
+  border-color: #4a505c;
+}
+/* ikon mata di password*/
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #98a2b3;
+  font-size: 20px;
+}
+/* tag lupa password */
+a {
+  align-self: flex-end;
+  color: #4a505c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* tombol masuk */
+.btn-primary {
+  width: 100%;
+  height: 42px;
+  background-color: #3ecf4c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  gap: 2px;
+}
+.btn-regis {
+  width: 100%;
+  height: 42px;
+  background-color: #e2fcd9cc;
+  color: #3ecf4c;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* teks divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  color: #8e8e8e;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+/* garis kiri kanan */
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e5e7eb;
+}
+/* jarak garis dengan teks di tengah */
+.divider::before {
+  margin-right: 12px;
+}
+.divider::after {
+  margin-left: 12px;
+}
+/* pengaturan group button SSO */
+.google-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.btn-google {
+  width: 100%;
+  height: 42px;
+  background-color: #ffff;
+  color: #4a505c;
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  padding-left: 35px;
+}
+
+.google-icon {
+  position: absolute;
+  left: 160px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+/* @media (max-width: 768px) {
+  header {
+    padding: 16px 20px;
+  }
+  #form {
+    padding: 24px 16px;
+  }
+} */
