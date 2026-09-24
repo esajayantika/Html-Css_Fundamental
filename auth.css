@@ -1,0 +1,20 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  /* mengaktifkan flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  max-width: 400px;
+  width: 100%;
+}
