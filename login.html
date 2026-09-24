@@ -3,18 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>login</title>
     <link rel="stylesheet" href="auth.css" />
   </head>
   <body>
+    <header><img src="/src/Logo.svg" alt="logo video belajar" /></header>
     <div class="container-fluid">
       <form action="#" id="form">
-        <h4>Masuk ke Akun</h4>
-        <p>Yuk lanjutin belajarmu di videobelajar</p>
-        <label>Username: </label>
-        <input type="text" />
-        <label>Password: </label>
-        <input type="password" name="password" id="password" />
+        <!-- Group Header -->
+        <div class="form-header">
+          <h3>Masuk ke Akun</h3>
+          <p>Yuk lanjutin belajarmu di videobelajar</p>
+        </div>
+        <!-- Group Username -->
+        <div class="input-group">
+          <label>E-Mail </label>
+          <input type="email" />
+        </div>
+        <!-- Group Password -->
+        <div class="input-group">
+          <label>Kata Sandi </label>
+          <div class="password-group">
+            <input type="password" name="password" id="password" />
+            <img src="/src/mdi_eye-off.svg" alt="Toggle Password" class="eye-icon" />
+          </div>
+        </div>
+        <a href="">Lupa Password?</a>
+        <!-- Group Button -->
+        <div class="button-group">
+          <button type="submit" class="btn-primary">Masuk</button>
+          <button type="button" class="btn-regis">Daftar</button>
+        </div>
+        <div class="divider">atau</div>
+        <!-- Group Button SSO -->
+        <div class="google-group">
+          <button type="button" class="btn-google">Masuk dengan Google</button>
+          <img src="/src/logos_google-icon.svg" alt="logo SSO" class="google-icon" />
+        </div>
       </form>
     </div>
   </body>
