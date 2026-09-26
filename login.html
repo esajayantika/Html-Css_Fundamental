@@ -21,12 +21,12 @@
         </div>
         <!-- Group Username -->
         <div class="input-group">
-          <label>E-Mail </label>
-          <input type="email" />
+          <label for="email">E-Mail </label>
+          <input type="email" id="email" />
         </div>
         <!-- Group Password -->
         <div class="input-group">
-          <label>Kata Sandi </label>
+          <label for="password">Kata Sandi </label>
           <div class="password-group">
             <input type="password" name="password" id="password" />
             <img src="/src/mdi_eye-off.svg" alt="Toggle Password" class="eye-icon" />
@@ -40,10 +40,10 @@
         </div>
         <div class="divider">atau</div>
         <!-- Group Button SSO -->
-        <div class="google-group">
-          <button type="button" class="btn-google">Masuk dengan Google</button>
+        <button type="button" class="btn-google">
           <img src="/src/logos_google-icon.svg" alt="logo SSO" class="google-icon" />
-        </div>
+          <span>Masuk dengan Google</span>
+        </button>
       </form>
     </div>
   </body>
