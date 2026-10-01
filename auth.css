@@ -225,7 +225,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   /* Drop down icon */
-  background-image: url(./src/Icondropdown.svg);
+  background-image: url(./public/Icondropdown.svg);
   background-repeat: no-repeat;
   background-position: right 12px center;
   padding-right: 32px;
@@ -264,7 +264,7 @@ select {
 }
 #code-number {
   background: transparent;
-  background-image: url(./src/Icondropdown.svg);
+  background-image: url(./public/Icondropdown.svg);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 10px;
