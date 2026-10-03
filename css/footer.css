@@ -1,0 +1,126 @@
+.about-detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  margin: 28px auto;
+}
+.about-detail img {
+  height: 25px;
+  align-self: flex-start;
+}
+.about-outro {
+  width: 100%;
+  font-weight: 700;
+  font-size: clamp(14px, 4vw, 18px);
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+.about-category {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 18px;
+}
+.sub-category {
+  gap: 10px;
+  width: 100%;
+}
+.sub-category h4 {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  /* Drop right icon */
+  background-image: url(../public/Icondropdown.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 20px;
+  padding-right: 30px;
+}
+.sub-category p {
+  display: none;
+}
+.end-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 18px;
+  width: 100%;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.social-media img {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+}
+.copy-right {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #333333ad;
+}
+/* display grid footer */
+@media (min-width: 1024px) {
+  .about-detail {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: start;
+    column-gap: 40px;
+    row-gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .about-detail img,
+  .about-outro,
+  .address {
+    grid-column: 1;
+  }
+  .about-outro {
+    max-width: 380px;
+  }
+  /* baris kategori */
+  .about-category {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    flex-direction: row;
+    gap: 60px;
+    width: auto;
+    text-align: left;
+  }
+  .sub-category {
+    width: auto;
+  }
+  .sub-category h4 {
+    background-image: none;
+    padding-right: 0;
+    cursor: default;
+  }
+  .sub-category p {
+    display: block;
+    line-height: 2;
+  }
+  .end-content {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0e0;
+  }
+}
